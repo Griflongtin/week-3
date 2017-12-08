@@ -21,3 +21,8 @@
   background: rgba($toggler-color, 0.7);
   transition: $toggler-transition;
 }
+
+@mixin content-box($float, $width) {
+  float: $float;
+  width: $width;
+}

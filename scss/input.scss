@@ -1,1 +1,42 @@
 @import 'abstracts/module', 'base/module', 'components/module', 'layout/module', 'pages/module';
+
+@media screen and (min-width: 901px){
+  .move {
+    position: absolute;
+    width: 300px;
+    top: 150px;
+    left: 10px;
+  }
+  .content {
+    @include content-box(right, calc(100% - 320px));
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 501px) {
+  .move {
+    position: absolute;
+    width: 300px;
+    top: 150px;
+    right: 10px;
+  }
+  .content {
+    @include content-box(left, calc(100% - 320px));
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .move {
+    position: relative;
+    width: 300px;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    clear: both;
+  }
+  .content {
+    @include content-box(left, 100%);
+    margin-top: 320px;
+    height: calc(100vh - 336px);
+  }
+}

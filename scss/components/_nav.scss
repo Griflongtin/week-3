@@ -91,7 +91,7 @@
   height: inherit;
   line-height: $item-size;
   color: rgba($item-color, 0.7);
-  background: rgba(white, 0.2);
+  background: rgba($item-color, 0.2);
   border-radius: 50%;
   text-align: center;
   text-decoration: none;

@@ -1,9 +1,10 @@
 $toggler-size: 40px;
-$toggler-color: white;
 $toggler-transition: transform .5s, top .5s;
 $screen-width: 30;
-
+$item-transition: .5s;
 $item-count: 4;
 $item-size: $toggler-size * 2;
-$item-color: white;
-$item-transition: .5s;
+$item-color: #01FF70;
+$toggler-color: #01FF70;
+$background-color: #000000;
+$canves-color: #5dca31;

@@ -1,0 +1,23 @@
+@mixin size ($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@mixin line {
+  @include size($toggler-size, $toggler-size/8);
+  display: block;
+  z-index: 1;
+  border-radius: $toggler-size/16;
+  background: rgba($toggler-color, 0.7);
+  transition: $toggler-transition;
+}

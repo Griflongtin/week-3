@@ -75,4 +75,4 @@ _If you have any issues, questions, ideas or concerns, please contact me at Grif
 
 ### License
 
-Copyright (c) 2017 **_Griffin P. Longtin_**
+Copyright (c) 2017 **_Griffin P Longtin_**

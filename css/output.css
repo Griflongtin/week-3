@@ -548,9 +548,9 @@ body {
     height: 100vh; } }
 @media screen and (max-width: 500px) {
   .move {
-    position: relative;
+    position: absolute;
     width: 300px;
-    top: 150px;
+    top: 169px;
     left: 50%;
     transform: translate(-50%, -100%);
     clear: both; }

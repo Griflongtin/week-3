@@ -72,7 +72,7 @@
 }
 
 @for $i from 0 through $item-count - 1 {
-  .menu-item:nth-child(#{$i + 1}) a {
+  .menu-item:nth-child(#{$i + 1}) button {
     transform: rotate(-360deg / $item-count * $i);
   }
 }

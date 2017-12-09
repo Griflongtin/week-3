@@ -364,6 +364,41 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+.modal-button {
+  width: 78px;
+  height: 80px;
+  background-color: transparent;
+  color: #fff; }
+
+.modal {
+  color: #fff;
+  z-index: 20;
+  display: none;
+  max-height: 80%;
+  height: 80vmin;
+  padding: 3%;
+  background-color: gray;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px; }
+  .modal .header-text {
+    padding-bottom: 3px;
+    height: 30px; }
+    .modal .header-text h1 {
+      float: left; }
+    .modal .header-text img {
+      float: right;
+      width: 30px;
+      height: 111%; }
+  .modal .modal-content {
+    max-height: 70%;
+    overflow: auto;
+    width: 100%; }
+    .modal .modal-content .img {
+      text-align: center; }
+      .modal .modal-content .img img {
+        width: 50%; }
+
 .menu-toggler {
   position: absolute;
   display: block;
@@ -435,16 +470,16 @@ textarea {
   .menu-toggler + label:after {
     top: -10px; }
 
-.menu-item:nth-child(1) a {
+.menu-item:nth-child(1) button {
   transform: rotate(0deg); }
 
-.menu-item:nth-child(2) a {
+.menu-item:nth-child(2) button {
   transform: rotate(-90deg); }
 
-.menu-item:nth-child(3) a {
+.menu-item:nth-child(3) button {
   transform: rotate(-180deg); }
 
-.menu-item:nth-child(4) a {
+.menu-item:nth-child(4) button {
   transform: rotate(-270deg); }
 
 .menu-item {
@@ -481,13 +516,13 @@ textarea {
     font-size: 44.4444444444px; }
 
 body {
-  background-color: #000000; }
+  background-color: #0c2900; }
 
 .container {
   position: relative; }
 
 .content {
-  background-color: #5dca31; }
+  background-color: #000000; }
 
 @media screen and (min-width: 901px) {
   .move {

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/output.css" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/master.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -13,22 +15,125 @@
           <label for='menu-toggler'></label>
           <ul>
             <li class='menu-item'>
-              <a class='fa fa-facebook' href='https://www.facebook.com/' target='_blank'></a>
+              <button type="button" class="modal-button" value="one" name="button">Home</button>
             </li>
             <li class='menu-item'>
-              <a class='fa fa-google' href='https://www.google.com/' target='_blank'></a>
+              <button type="button" class="modal-button" value="two" name="button">Past<br>Work</button>
             </li>
             <li class='menu-item'>
-              <a class='fa fa-dribbble' href='https://dribbble.com/' target='_blank'></a>
+              <button type="button" class="modal-button" value="three" name="button">Me</button>
             </li>
             <li class='menu-item'>
-              <a class='fa fa-codepen' href='https://codepen.io/' target='_blank'></a>
+              <button type="button" class="modal-button" value="four" name="button">Contact</button>
             </li>
           </ul>
         </nav>
       </section>
       <div class="content">
-
+        <section class="modal" id="modal-one">
+          <div class="header-text">
+            <h1>Car</h1>
+            <img class="close-modal" src="img/close-icon.png" alt="">
+          </div>
+          <div class="modal-content">
+            <div class="img">
+              <img src="img/car1.jpeg" alt="">
+            </div>
+            <p>I love Modals. This is modal-one Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+          </div>
+        </section>
+        <section class="modal" id="modal-two">
+          <div class="header-text">
+            <h1>Experience</h1>
+            <img class="close-modal" src="img/close-icon.png" alt="">
+          </div>
+          <div class="modal-content">
+            <div class="job-entry">
+              <h3>Name of Company</h3>
+              <h4>Title</h4>
+              <h4>City, State</h4>
+              <p>Short job description.</p>
+              <ul>
+                <li>Bullet of work performed.</li>
+                <li>Bullet of work performed.</li>
+                <li>Bullet of work performed.</li>
+                <li>Bullet of work performed.</li>
+              </ul>
+            </div>
+            <div class="job-entry">
+              <h3>Name of Company</h3>
+              <h4>Title</h4>
+              <h4>City, State</h4>
+              <p>Short job description.</p>
+              <ul>
+                <li>Bullet of work performed.</li>
+                <li>Bullet of work performed.</li>
+                <li>Bullet of work performed.</li>
+                <li>Bullet of work performed.</li>
+              </ul>
+            </div>
+            <div class="job-entry">
+              <h3>Name of Company</h3>
+              <h4>Title</h4>
+              <h4>City, State</h4>
+              <p>Short job description.</p>
+              <ul>
+                <li>Bullet of work performed.</li>
+                <li>Bullet of work performed.</li>
+                <li>Bullet of work performed.</li>
+                <li>Bullet of work performed.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="modal" id="modal-three">
+          <div class="header-text">
+            <h1>Biography</h1>
+            <img class="close-modal" src="img/close-icon.png" alt="">
+          </div>
+          <div class="modal-content">
+            <div class="img">
+              <img src="img/headshot.jpg" alt="">
+            </div>
+            <p>I love Modals. This is modal-three. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>Education</h2>
+            <ul>
+              <li>Certificate</li>
+              <li>Trade school</li>
+              <li>High School</li>
+              <li>University</li>
+            </ul>
+            <h2>Volunteer</h2>
+            <ul>
+              <li>Place</li>
+              <li>Place</li>
+            </ul>
+            <h2>Skills</h2>
+            <ul>
+              <li>Skill</li>
+              <li>Language</li>
+              <li>Program</li>
+              <li>Skill</li>
+              <li>Language</li>
+              <li>Program</li>
+            </ul>
+          </div>
+        </section>
+        <section class="modal" id="modal-four">
+          <div class="header-text">
+            <h1>Contact</h1>
+            <img class="close-modal" src="img/close-icon.png" alt="">
+          </div>
+          <div class="modal-content">
+            <h2>Email Address</h2>
+            <h2>555.555.5555</h2>
+            <p>I would love to hear from you. Please contact me.</p>
+            <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+            <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+            <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+            <span><i class="fa fa-behance-square" aria-hidden="true"></i></span>
+          </div>
+        </section>
       </div>
       <footer>
       </footer>

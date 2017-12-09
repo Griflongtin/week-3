@@ -1,0 +1,32 @@
+.modal {
+  color: $text-color;
+  z-index: 20;
+  .header-text {
+    padding-bottom: 3px;
+    height: 30px;
+    h1 {
+      float: left;
+    }
+    img {
+      @include content-box(right, 30px);
+      height: 111%;
+    }
+  }
+  display: none;
+  max-height: 80%;
+  height: 80vmin;
+  padding: 3%;
+  background-color: $modal-color;
+  @include round-borders(30px);
+  & .modal-content {
+    max-height: 70%;
+    overflow: auto;
+    width: 100%;
+    .img {
+      text-align: center;
+      img {
+        width: 50%;
+     }
+    }
+  }
+}
